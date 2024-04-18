@@ -5,22 +5,22 @@ const container = document.getElementById('container')
 
 function criarFilme(info){
     const filme = document.createElement('div')
-    filme.classList.add('h-20','border-b-4','border-[#ECDDA2]', 'grid', 'grid-cols-4', 'place-items-center')
+    filme.classList.add('h-20', 'grid', 'grid-cols-4', 'place-items-center')
     const id = document.createElement('h1')
-    id.classList.add('text-[#ECDDA2]','text-3xl')
+    id.classList.add('text-[#fafafa]','text-3xl')
     id.textContent=info.id
     const produto = document.createElement('p')
     produto.textContent=info.nome
-    produto.classList.add('text-[#ECDDA2]','text-3xl')
+    produto.classList.add('text-[#fafafa]','text-3xl')
     const valor = document.createElement('p')
-    valor.classList.add('text-[#ECDDA2]','text-3xl')
+    valor.classList.add('text-[#fafafa]','text-3xl')
     valor.textContent= 'R$'+info.valor_unitario
     const icones = document.createElement('div')
-    icones.classList.add('text-[#ECDDA2]','text-3xl','flex','gap-4')
+    icones.classList.add('text-[#fafafa]','text-3xl','flex','gap-4')
     const iconeEditar = document.createElement('i')
     iconeEditar.classList.add('bx','bxs-edit-alt','cursor-pointer')
     const iconeDeletar = document.createElement('i')
-    iconeDeletar.classList.add('bx','bxs-trash','text-[#FF0000]','cursor-pointer')
+    iconeDeletar.classList.add('bx','bxs-trash','text-[#fafafa]','cursor-pointer')
 
     icones.replaceChildren(iconeEditar,iconeDeletar)
     filme.replaceChildren(id,produto,valor,icones)
@@ -37,9 +37,9 @@ function criarFilme(info){
 
 const add = document.getElementById('add')
 
-add.addEventListener('click', ()=>{
-    window.location.href = '../cadastro.html'
-})
+// add.addEventListener('click', ()=>{
+//     window.location.href = '../cadastro.html'
+// })
 
 listaFilme.forEach(filme => {
     criarFilme(filme)

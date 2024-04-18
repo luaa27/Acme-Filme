@@ -3,7 +3,6 @@ import {getFilmes, postFilme, selectNameFilmes} from "./filmes.js"
 
 console.table(await getFilmes())
 
-import { getFilmesId } from "./filmes.js"
 
 const search = new URLSearchParams(window.location.search).get('search')
 const searchBar = document.getElementById('searchBar')

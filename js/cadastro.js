@@ -1,7 +1,7 @@
 'use strict'
 import {getFilmes, getFilmesId,postFilme, putFilme} from "./filmes.js"
 
-// Import das tags do HTML pelo ID
+
 const titulo = document.getElementById('titulo')
 const sinopse = document.getElementById('sinopse')
 const duracao = document.getElementById('duracao')

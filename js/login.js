@@ -5,7 +5,6 @@ const email = document.getElementById('email')
 const senha = document.getElementById('senha');
 const icone = document.getElementById('icone');
 const logar = document.getElementById('logar')
-const vip = document.getElementById('vip')
 
 
 logar.addEventListener('click', ()=>{
