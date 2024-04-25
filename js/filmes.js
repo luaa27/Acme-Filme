@@ -1,5 +1,5 @@
 export async function getFilmes(){
-    const url = 'http://localhost:8080/v2/FilmesACME/filmes'
+    const url = `http://localhost:8080/v2/FilmesACME/filmes`
     const response = await fetch(url)
     const data = await response.json()
     
@@ -52,6 +52,20 @@ export async function putFilme(id, filme){
 
     return response.ok
 }
+export async function getClassificacoes(){
+    const url = 'http://localhost:8080/v2/FilmesACME/classificacoes'
+    const response = await fetch(url)
+    const data = await response.json()
+    return data.classificacao
+}
+
+export async function getClassificacaoFilmePorId(id){
+    const url = `http://localhost:8080/v2/FilmesACME/classificacoes/${id}`
+    const response = await fetch(url)
+    const data = await response.json()
+    console.log(data);
+    return data.class
+}
 
 
 
@@ -65,5 +79,19 @@ export async function deleteFilme(id){
     } catch (error){
         console.error('Erro ao excluir filme: ',error);
     }
+}
+export async function getGeneros(){
+    const url = 'http://localhost:8080/v2/FilmesACME/generos'
+    const response = await fetch(url)
+    const data = await response.json()
+    return data.genero
+}
+
+export async function getGeneroFilmePorId(id){
+    const url = `http://localhost:8080/v2/FilmesACME/generos/${id}`
+    const response = await fetch(url)
+    const data = await response.json()
+    console.log(data);
+    return data.genero
 }
 
