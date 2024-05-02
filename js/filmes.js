@@ -24,7 +24,7 @@ export async function selectNameFilmes(nome){
 
 
 export async function postFilme(filme){
-    const url = 'http://localhost:8080/v2/acmeFilmes/filme'
+    const url = 'http://localhost:8080/v2/FilmesACME/filme'
     const options = {
         method: 'POST',
         headers: {
@@ -72,7 +72,7 @@ export async function getClassificacaoFilmePorId(id){
 
 export async function deleteFilme(id){
     try{
-        await fetch(`http://localhost:8080/v2/acmeFilmes/filme/${id}`,{
+        await fetch(`http://localhost:8080/v2/FilmesACME/filme/${id}`,{
             method: 'DELETE'
         })
         console.log("Filme excluído com sucesso")

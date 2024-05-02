@@ -1,7 +1,6 @@
 'use strict'
 import {getFilmes, postFilme, selectNameFilmes} from "./filmes.js"
 
-console.table(await getFilmes())
 
 const search = new URLSearchParams(window.location.search).get('search')
 const searchBar = document.getElementById('searchBar')

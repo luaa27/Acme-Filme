@@ -10,14 +10,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Cadastro</title>
 </head>
-<body class="bg-[#fafafa] h-screen">
+<body class="bg-[#0c0a09] h-screen">
     
-    <header class="h-24 flex justify-between items-center p-12 bg-[#0c0a09] border-b-4 border-[#ECDDA2]">
-        <h1 class="text-[#ECDDA2] text-3xl"><a href="./dashboard.html">CADASTRAR FILME</a></h1>
+        <h1 class="text-[#fafafa] text-3xl"><a href="./dashboard.html">CADASTRAR FILME</a></h1>
         <ul class="flex gap-4">
 
-            <li class="border-4 border-[#ECDDA2] rounded-full p-2"><a href="./login.html"
-                    class="text-[#ECDDA2] text-2xl   hover:bg-[#ECDDA2]  ">
+            <li class="border-4 border-[#fafafa] rounded-full p-2"><a href="./login.html"
+                    class="text-[#fafafa] text-2xl   hover:bg-[#fafafa]  ">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-12 h-12">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -27,40 +26,45 @@
         </ul>
     </header>
 
-    <main class="h-5/6 flex justify-center items-center ">
-        <div class="flex w-full h-full justify-around items-center" id="container">
-        <div class="flex flex-col   gap-4 border-4 border-[#ECDDA2#ECDDA2] p-5 mt-5 rounded-lg">
-            <h1 class="text-[#ECDDA2]  text-3xl flex items-center justify-center pb-4">CADASTRE SEU FILME</h1>
-            <div class="flex items-center gap-2">
-                <p class="text-[#ECDDA2]  text-3xl" >Nome do filme:</p>
-                <input type="text" class="outline-none p-3 w-96 border-4 border-[#ECDDA2#ECDDA2] bg-[#0c0a09] text-[#ECDDA2] text-2xl" id="titulo">
+    <div class="flex w-full h-full justify-around items-center" id="container">
+        <div class="flex gap-5 flex-col" id="infoFilme">
+            <div class="flex items-center justify-between gap-2">
+                <p class="text-[#fafafa]  text-3xl" >Nome do filme:</p>
+                <input type="text" class="outline-none p-3 w-72 border-4 border-[#fafafa#fafafa] bg-[#0c0a09] text-[#fafafa] text-2xl" id="nome">
             </div>
-            <div class="flex items-center gap-4">
-                <p class="text-[#ECDDA2]  text-3xl" >Sinopse:</p>
-                <textarea name=""  cols="30" rows="3" class="w-96 outline-none border-4 border-[#ECDDA2#ECDDA2] bg-[#0c0a09] text-[#ECDDA2] text-1xl" id="sinopse"></textarea>
+            <div class="flex items-center justify-between gap-4">
+                <p class="text-[#fafafa]  text-3xl" >Sinopse:</p>
+                <textarea name=""  cols="30" rows="5" class="w-72 outline-none border-4 border-[#fafafa#fafafa] bg-[#0c0a09] text-[#fafafa] text-1xl" id="sinopse"></textarea>
             </div>
-            <div class="flex items-center gap-4">
-                <p class="text-[#ECDDA2]  text-3xl" >Duração:</p>
-                <input type="text" class="p-3 outline-none border-4 border-[#ECDDA2#ECDDA2] bg-[#0c0a09] text-[#ECDDA2] text-2xl" id="duracao">
+            <div class="flex items-center justify-between gap-4">
+                <p class="text-[#fafafa]  text-3xl" >Duração:</p>
+                <input type="text" class="p-3 outline-none border-4 w-72 border-[#fafafa#fafafa] bg-[#0c0a09] text-[#fafafa] text-2xl" id="duracao">
             </div>
-            <div class="flex items-center gap-2">
-                <p class="text-[#ECDDA2]  text-3xl" >Lançamento:</p>
-                <input type="date" class="p-3 outline-none border-4 border-[#ECDDA2#ECDDA2] bg-[#0c0a09] text-[#ECDDA2] text-2xl" id="lancamento">
+            <div class="flex items-center justify-between gap-2">
+                <p class="text-[#fafafa]  text-3xl" >Lançamento:</p>
+                <input type="date" class="p-3 outline-none border-4 w-72 border-[#fafafa#fafafa] bg-[#0c0a09] text-[#fafafa] text-2xl" id="lancamento">
             </div>
-            <div class="flex items-center gap-2">
-                <p class="text-[#ECDDA2]  text-3xl" >Relançamento:</p>
-                <input type="date" class="p-3 outline-none border-4 border-[#ECDDA2#ECDDA2] bg-[#0c0a09] text-[#ECDDA2] text-2xl" id="relancamento">
+            <div class="flex items-center justify-between gap-2">
+                <p class="text-[#fafafa]  text-3xl" >Relançamento:</p>
+                <input type="date" class="p-3 outline-none border-4 w-72 border-[#fafafa#fafafa] bg-[#0c0a09] text-[#fafafa] text-2xl" id="relancamento">
             </div>
-            <div class="flex items-center gap-2">
-                <p class="text-[#ECDDA2]  text-3xl" >Valor:</p>
-                <input type="text" class="p-3 outline-none border-4 border-[#ECDDA2#ECDDA2] bg-[#0c0a09] text-[#ECDDA2] text-2xl" id="valor">
+            <div class="flex items-center justify-between gap-2">
+                <p class="text-[#fafafa]  text-3xl" >Valor:</p>
+                <input type="text" class="p-3 outline-none border-4 w-72 border-[#fafafa#fafafa] bg-[#0c0a09] text-[#fafafa] text-2xl" id="valor">
             </div>
-            <button class="p-3 border-4 mt-6 border-[#ECDDA2] text-[#ECDDA2] font-bold hover:bg-[#ECDDA2] hover:text-[#0c0a09] transition ease-in-out block rounded-full" id="cadastrar">CADASTRAR FILME</button>
+            <div class="flex items-center justify-between gap-2">
+                <p class="text-[#fafafa]  text-3xl" >Classificação</p>
+                <input type="text" class="p-3 outline-none border-4 w-72 border-[#fafafa#fafafa] bg-[#0c0a09] text-[#fafafa] text-2xl" id="classificacao">
+                <div class="flex items-center justify-between gap-2">
+                    <p class="text-[#fafafa]  text-3xl" >Diretor</p>
+                    <input type="text" class="p-3 outline-none border-4 w-72 border-[#fafafa#fafafa] bg-[#0c0a09] text-[#fafafa] text-2xl" id="diretor">
+            </div>
         </div>
         <div class="" id="capaFilme">
-            <div class="posterFilme bg-[#7A7A7A] text-[#ECDDA2] h-fit flex flex-col items-center border-4 border-[#ECDDA2]">
+            <div class="posterFilme bg-[#7A7A7A] text-[#fafafa] h-fit flex flex-col items-center border-4 border-[#fafafa]">
                 <img id="poster" class="w-64">
                 <input type="text" id="link" class="w-full outline-none bg-[#0c0a09] font-bold" placeholder="Link da imagem">
+                <button type="submit" id="cadastrar">Adicionar Filme</button>
             </div>
         </div>
     </div>
